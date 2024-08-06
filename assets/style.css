@@ -1,0 +1,111 @@
+/* Some styling to make it look good */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #151515;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'IBM Plex Sans';
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.header {
+  font-size: 42px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  height: 42px;
+  width: 42px;
+}
+
+.description {
+  font-size: 16px;
+  color: #afafaf;
+}
+
+.input {
+  width: 100%;
+  background-color: transparent;
+  border: 1.5px rgb(74, 74, 74) solid;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  outline: none;
+
+  transition: color;
+  transition-duration: 100ms;
+}
+
+.input:disabled {
+  color: #757575;
+}
+
+.logo {
+  height: 55px;
+  width: 55px;
+  /* padding: 1.5em; */
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 24px #685dff);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  flex-shrink: 0;
+
+  padding: 18px;
+  padding-left: 24px;
+  padding-right: 30px;
+}
+
+.footer a,
+.footer a:visited {
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-underline-offset: 2.5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer div {
+  display: flex;
+  gap: 26px;
+}
