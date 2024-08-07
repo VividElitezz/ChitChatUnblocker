@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Redirect to         [   uv prefix    ] + [   encoded search query   ]
     localStorage.setItem('url', __uv$config.prefix + __uv$config.encodeUrl(query))
-    window.location.href = 'w.html'
+    window.location.href = '/w.html'
   }
 })
 
