@@ -3,11 +3,12 @@ body {
   color: #FFFFFF;
   height: 100vh;
   width: 100vw;
-  background-image: url('https://github.com/VividElitezz/ChitChatUnblocker/blob/main/bg.jpg?raw=true'); // for now
+  background-image: url('https://github.com/VividElitezz/ChitChatUnblocker/blob/main/bg.jpg?raw=true');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {

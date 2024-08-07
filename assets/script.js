@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const query = formatSearch(input.value)
 
     // Redirect to         [   uv prefix    ] + [   encoded search query   ]
-    window.location.href = __uv$config.prefix + __uv$config.encodeUrl(query)
+    localStorage.setItem('url', __uv$config.prefix + __uv$config.encodeUrl(query))
+    window.location.href = 'w.html'
   }
 })
 

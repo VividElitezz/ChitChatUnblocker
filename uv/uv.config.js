@@ -1,5 +1,5 @@
 self.__uv$config = {
-    prefix: '/service/',
+    prefix: '/service/chit/',
 
     /* Bare server URL */ 
     bare: 'https://muddy-rice-ba72.acsessremote.workers.dev/',
