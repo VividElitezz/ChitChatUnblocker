@@ -6,7 +6,7 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background-image: url('https://github.com/VividElitezz/ChitChatUnblocker/blob/main/bg.jpg?raw=true');
+  background-image: url('https://cdn.prod.website-files.com/5a9ee6416e90d20001b20038/64f5e02cb5805eb6fd8e503c_Rectangle%20(98).svg');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@ body {
   display: flex;
   align-items: center;
   gap: 14px;
-  color: #FFFFFF;
+  color: #DA70D6;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -60,7 +60,7 @@ body {
   font-size: 16px;
   padding: 14px;
   text-align: center;
-  color: #FFFFFF;
+  color: #DA70D6;
   outline: none;
   border-radius: 50px;
   transition: border-color 200ms, box-shadow 200ms;
@@ -101,13 +101,13 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   bottom: 0;
-  color: #FFFFFF;
+  color: #DA70D6;
   backdrop-filter: blur(10px);
 }
 
 .footer a,
 .footer a:visited {
-  color: #FFFFFF;
+  color: #DA70D6;
   font-size: 16px;
   text-decoration: none;
   text-underline-offset: 2.5px;
@@ -116,7 +116,7 @@ body {
 
 .footer a:hover {
   text-decoration: underline;
-  color: #ffffff;
+  color: #DA70D6;
 }
 
 .footer div {
@@ -131,7 +131,7 @@ body {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
-  color: #FFFFFF;
+  color: #DA70D6;
   z-index: 1000;
   padding: 10px 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -140,7 +140,7 @@ body {
 .navbar a {
   float: left;
   display: block;
-  color: #FFFFFF;
+  color: #DA70D6;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -148,7 +148,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #ffffff;
+  background-color: #DA70D6;
   color: black;
 }
 
@@ -156,7 +156,7 @@ body {
 .button {
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
-  color: #FFFFFF;
+  color: #DA70D6;
   padding: 16px 36px;
   text-align: center;
   text-decoration: none;
