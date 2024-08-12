@@ -1,65 +1,78 @@
+/* Global Styles */
 body {
-  background-color: #2e2e2e;
-  color: #FFFFFF;
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+  margin: 0;
+  padding: 0;
   height: 100vh;
   width: 100vw;
   background-image: url('https://github.com/VividElitezz/ChitChatUnblocker/blob/main/bg.jpg?raw=true');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
-  backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 20px;
+  gap: 20px;
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: min(90%, 500px);
 }
 
 .header {
-  font-size: 42px;
+  font-size: 48px;
+  font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   color: #FFFFFF;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .icon {
-  height: 42px;
-  width: 42px;
+  height: 48px;
+  width: 48px;
 }
 
 .description {
-  font-size: 16px;
-  color: #FFFFFF;
+  font-size: 18px;
+  color: #d1d1d1;
+  line-height: 1.6;
 }
 
 .input {
-  width: 400px;
+  width: 100%;
+  max-width: 450px;
   background-color: transparent;
-  border: 1.5px solid rgb(74, 74, 74);
-  font-size: 14px;
-  padding: 12px;
+  border: 2px solid rgb(100, 100, 100);
+  font-size: 16px;
+  padding: 14px;
   text-align: center;
   color: #FFFFFF;
   outline: none;
-  border-radius: 50px; 
-  transition: color 100ms;
+  border-radius: 50px;
+  transition: border-color 200ms, box-shadow 200ms;
 }
 
 .input::placeholder {
-  color: #757575;
+  color: #a1a1a1;
+}
+
+.input:focus {
+  border-color: #685dff;
+  box-shadow: 0 0 10px rgba(104, 93, 255, 0.6);
 }
 
 .input:disabled {
@@ -67,57 +80,61 @@ body {
 }
 
 .logo {
-  height: 55px;
-  width: 55px;
+  height: 60px;
+  width: 60px;
   will-change: filter;
   transition: filter 300ms;
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 24px #685dff);
+  filter: drop-shadow(0 0 30px #685dff);
 }
 
+/* Footer */
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
+  width: 100%;
   box-sizing: border-box;
-  flex-shrink: 0;
-  padding: 18px;
-  padding-left: 24px;
-  padding-right: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
   color: #FFFFFF;
+  backdrop-filter: blur(10px);
 }
 
 .footer a,
 .footer a:visited {
-  cursor: pointer;
   color: #FFFFFF;
   font-size: 16px;
   text-decoration: none;
   text-underline-offset: 2.5px;
+  transition: color 200ms, text-decoration 200ms;
 }
 
 .footer a:hover {
   text-decoration: underline;
+  color: #ffffff;
 }
 
 .footer div {
   display: flex;
-  gap: 26px;
+  gap: 30px;
 }
 
+/* Navbar */
 .navbar {
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
   color: #FFFFFF;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .navbar a {
@@ -125,30 +142,33 @@ body {
   display: block;
   color: #FFFFFF;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 20px;
   text-decoration: none;
+  transition: background-color 300ms, color 300ms;
 }
 
 .navbar a:hover {
-  background: #ddd;
+  background-color: #ffffff;
   color: black;
 }
 
+/* Button Styles */
 .button {
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
   color: #FFFFFF;
-  padding: 15px 32px;
+  padding: 16px 36px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 18px;
+  margin: 5px 3px;
   cursor: pointer;
-  border-radius: 200px;
-  transition: background-color 300ms, color 300ms;
+  border-radius: 50px;
+  transition: background-color 300ms, color 300ms, transform 200ms;
 }
 
 .button:hover {
   background-color: #ffffff;
   color: black;
+  transform: scale(1.05);
 }
