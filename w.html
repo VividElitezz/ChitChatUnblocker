@@ -17,9 +17,8 @@
             outline: none;
             position: fixed;
             border-radius: 10px;
-            margin-left: 1vw;
-            height: 96vh;
-            width: 99vw;
+            height: 100vh;
+            width: 100vw;
             z-index: 999;
         }
         
@@ -29,6 +28,7 @@
     <iframe class="mainframe" id="frame"> </iframe>
     <script>
         addEventListener("DOMContentLoaded", (event) => {
+            //load the url
             const frame = document.getElementById('frame')
             const url = localStorage.getItem('url')
 

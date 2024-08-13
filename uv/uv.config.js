@@ -1,6 +1,7 @@
 /*global Ultraviolet*/
 self.__uv$config = {
-    prefix: '/service/',
+    prefix: '/uv/service/chitchat/',
+    //use a bare i made on vercel so i dont have to deploy shit
     bare: 'https://sunset-network-psi.vercel.app/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
